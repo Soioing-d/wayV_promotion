@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+
+/* reset */
+	html,body {margin:0; padding:0; font-family:"Noto Sans CJK KR","맑은 고딕","Malgun Gothic",Dotum,Arial,sans-serif; font-weight:400; font-size:14px; height:100%; color:#666; -webkit-text-size-adjust:none; position:relative; line-height:1.2;}
+	dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote {margin:0; padding:0; -webkit-text-size-adjust:none;}
+	th,td,input,textarea,select {font-size:14px; color:#666; font-family:"맑은 고딕","Malgun Gothic",Dotum,Arial,sans-serif; font-weight:400; -webkit-text-size-adjust:none;}
+	th,td {word-break:break-all; word-wrap:break-word; -webkit-text-size-adjust:none;}
+	table {border-spacing:0; border-collapse:collapse; -webkit-text-size-adjust:none; border:0; table-layout:fixed;}
+	address,caption,cite,code,dfn,var {font-style:normal; font-weight:400; -webkit-text-size-adjust:none;}
+	em {font-style:normal; -webkit-text-size-adjust:none;}
+	ol,ul,li {list-style:none;}
+	h1,h2,h3,h4,h5,h6 {font-size:100%; font-weight:700;}
+	abbr,acronym {border:0;}
+	hr,legend,caption {visibility:hidden; overflow:hidden; line-height:0; width:0; height:0; margin:0; padding:0;}
+	img,fieldset {border:0 none;}
+	label {cursor:pointer;}
+	a {color:inherit;}
+	a:link, a:visited, a:hover {color:inherit; text-decoration:none;}
+	a:active {text-decoration:none;}
+	input,img {vertical-align:middle;}
+
+    
+
+body { background:#000; height:100%; }
+
+audio { position:absolute; }
+
+/* Header */
+	.header_container { 
+		height:80px; background:#fff; position:fixed;
+		left:0; top:0; right:0; z-index:3000;
+		}
+	.header_inner { width:1420px; margin:0 auto; position:relative; color:#000; }
+	.header_inner .header_logo {
+		font-family:"Meiryo"; font-size:28px; font-weight:500;
+		height:80px; line-height:80px;
+		}
+	.header_inner .nav_menu { position:absolute; right:0; top:0; font-size:18px; font-family: font-weight:600; }
+	.header_inner .nav_menu ul { margin:0; padding:0; }
+	.header_inner .nav_menu li { float:left; margin-left:50px; }
+	.header_inner .nav_menu li:nth-child(1) { margin:0; }
+	.header_inner .nav_menu a { height:80px; line-height:80px;
+								display:block; box-sizing:border-box; }
+	.header_inner .nav_menu a:hover {border-bottom:4px solid #000;}
+
+/* Image Banner */
+	.swiper-slide { text-align:center; margin-top:80px; }
+	.swiper-slide img { width:1500px; }
+
+	.swiper-button-next, .swiper-container-rtl .swiper-button-prev
+		{ background-image:url(../images/arrowR.png); right:20px; }
+	.swiper-button-prev, .swiper-container-rtl .swiper-button-next
+		{background-image:url(../images/arrowL.png); left:20px;}
+	.swiper-pagination-bullet-active {background:#000;}
+
+/* V */
+	.V_wrap { text-align:center; height:900px; 
+			background:url(../images/bg_img.jpg) center no-repeat; }
+	.V_inner { width:1500px; height:100%; background:#000;
+			margin:0 auto; }
+	/*.V_inner .videoTabs { color:#fff; font-size:24px;
+						display:inline-block; margin-top:70px; }*/
+	.r-tabs { background:#000; border:none; margin-top:50px; }
+	.r-tabs-anchor {opacity:.5;}
+	.r-tabs-anchor.active {opacity:1;}
+	.r-tabs .r-tabs-panel { background:#000; border:none; }
+	.r-tabs .r-tabs-nav { background:#000; margin-right:1160px; }
+	.r-tabs .r-tabs-nav .r-tabs-tab {background:#000;}
+	.r-tabs .r-tabs-nav .r-tabs-anchor {font-size:24px; font-weight:400;
+										color:#fff;}
+	.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor 
+			{ color:#fff; background:#000;}
+	.r-tabs .r-tabs-panel.r-tabs-state-active {margin-top:40px;}
+
+	#responsiveTabsDemo a:hover {opacity:1;}
+
+/* Dream Launch Plan */
+	.dream_wrap { background:url(../images/bg_img_flip.jpg) center 0 no-repeat;
+				text-align:center; height:1770px; }
+	.dream_inner .dream_title { color:#fff; font-size:24px; display:inline-block;
+								margin:0 0 60px -1200px; }
+	.dream_inner { width:1420px; height:1690px; background:#000;
+				margin:0 auto; padding:40px; }
+	.dream_inner li { display:inline-block; }
+	.dream_inner .teaser { width:710px; transition:all 0.6s; }
+	.dream_inner .black { transition:all 0.6s; }
+	.dream_inner .row .column { float:left; width:50%; overflow:hidden; }
+	.dream_inner .row .black {position:absolute; width:710px;
+								height:403.56px; }
+	.dream_inner .row .column:hover .black { opacity:0; }
+	.dream_inner .row .column:hover .teaser { transform:scale(1.1); }
+
+/* Regular */
+	.regular_wrap { height:3106px; }
+	.regular_inner { width:1420px; margin:0 auto; height:100%;
+					padding:0 40px; }
+	.regular_inner p { display:inline-block; }
+

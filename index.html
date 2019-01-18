@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" /> 
+	<title>Way V</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/responsive-tabs.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/default.css" />
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.responsiveTabs.min.js"></script>
+	<script>
+		$(function(){
+			//see the v 활성화
+			//메뉴 탭
+			$('.nav_menu .m1').on('click', function(){
+				var pos=$('.V_wrap').offset().top-80;
+				$('html,body').animate({
+					'scrollTop':pos
+				}, 800);
+			});
+			$('.nav_menu .m2').on('click', function(){
+				var pos=$('.dream_wrap').offset().top-80;
+				$('html,body').animate({
+					'scrollTop':pos
+				}, 800);
+			});
+			//이미지 슬라이드 배너
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView:1,
+	 			spaceBetween:30,
+	 			loop:true,
+	 			centeredslides:true,
+	 			autoplay:{
+	 				delay:2500,
+	 				disableOnInteraction:false,
+	 			},
+	 			pagination:{
+	 				el:'.swiper-pagination',
+	 				clickable:true,
+	 			},
+	 			navigation:{
+	 				nextEl:'.swiper-button-next',
+	 				prevEl:'.swiper-button-prev',
+	 			},
+ 			});
+ 			//영상 탭
+ 			$('#responsiveTabsDemo').responsiveTabs({
+		    startCollapsed: 'accordion'
+			});
+			$('.r-tabs-anchor').on('click', function(){
+				$('.r-tabs-anchor').removeClass('active');
+				$(this).addClass('active');
+			});
+			//티저 이미지 애니메이션
+			$('dream_wrap .column').mouseenter(function(){
+				$('.dream_inner .black').animate({
+					'opacity':'0'
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- BGM -->
+	<!-- <audio controls loop autoplay>
+		<source src="./images/feel_the_v.mp3" type="audio/mpeg">
+	</audio> -->
+
+	<!-- Header -->
+	<div class="header_container">
+		<div class="header_inner">
+			<a href="index.html" class="header_logo">威神V</a>
+			<!-- Navigation -->
+			<nav class="nav_menu">
+				<ul>
+					<li><a href="#" class="m1">The V</a></li>
+					<li><a href="#" class="m2">Dream Launch Plan</a></li>
+					<li><a href="#" class="m3">Regular</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<!-- Image Slider -->
+	<div class="swiper-container">
+   		<div class="swiper-wrapper">
+    		<div class="swiper-slide">
+				<img src="images/01_slider_01.jpg">
+			</div>
+    		<div class="swiper-slide">
+				<img src="images/01_slider_02.jpg">
+			</div>
+    		<div class="swiper-slide">
+				<img src="images/01_slider_03.jpg">
+			</div>
+    		<div class="swiper-slide">
+				<img src="images/01_slider_04.jpg">
+			</div>
+    		<div class="swiper-slide">
+				<img src="images/01_slider_05.jpg">
+			</div>
+    		<div class="swiper-slide">
+				<img src="images/01_slider_06.jpg">
+			</div>
+    		<div class="swiper-slide">
+				<img src="images/01_slider_07.jpg">
+			</div>
+		</div>
+		<!-- Pagination -->
+	    <div class="swiper-pagination"></div>
+	    <!-- Arrows -->
+	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"></div>
+ 	</div>
+
+	<!-- V -->
+	<div class="V_wrap">
+		<div class="V_inner">
+			<div id="responsiveTabsDemo">
+				<ul>
+					<li><a href="#tab-1" class="btn-1 active">SEE THE V</a></li>
+					<li><a href="#tab-2" class="btn-2">FEEL THE V</a></li>
+				</ul>
+			</div>
+			<div id="tab-1">
+				<iframe width="1200" height="674" src="https://www.youtube.com/embed/sAiqhaBXQqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div id="tab-2">
+				<iframe width="1200" height="674" src="https://www.youtube.com/embed/AoLoCtFlK-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<!-- Dream Launch Plan -->
+	<div class="dream_wrap">
+		<div class="dream_inner">
+		<div class="dream_title">Dream Launch Plan</div>
+			<!-- 첫번째 줄 -->
+			<div class="row">
+				<div class="column">
+					<!-- <div class="name">LUCAS</div>
+					<div class="black"></div> -->
+					<img src="images/black_01.png" class="black">
+					<img src="images/dream_01.png" class="teaser">
+				</div>
+				<div class="column">
+					<img src="images/black_02.png" class="black">
+					<img src="images/dream_02.png" class="teaser">
+				</div>
+			</div>
+			<!-- 두번째 줄 -->
+			<div class="row">
+				<div class="column">
+					<img src="images/black_03.png" class="black">
+					<img src="images/dream_03.png" class="teaser">
+				</div>
+				<div class="column">
+					<img src="images/black_04.png" class="black">
+					<img src="images/dream_04.png" class="teaser">
+				</div>
+			</div>
+			<!-- 세번째 줄 -->
+			<div class="row">
+				<div class="column">
+					<img src="images/black_05.png" class="black">
+					<img src="images/dream_05.png" class="teaser">
+				</div>
+				<div class="column">
+					<img src="images/black_06.png" class="black">
+					<img src="images/dream_06.png" class="teaser">
+				</div>
+			</div>
+			<!-- 네번째 줄 -->
+			<div class="row">
+				<div class="column">
+					<img src="images/black_07.png" class="black">
+					<img src="images/dream_07.png" class="teaser">
+				</div>
+				<div class="column">
+					<img src="images/black_08.png" class="black">
+					<img src="images/dream_08.png" class="teaser">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Regular -->
+	<div class="regular_wrap">
+		<div class="regular_inner">
+			<p>Regular</p>
+		</div>
+	</div>
+
+</body>	
+</html>
