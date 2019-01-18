@@ -56,7 +56,7 @@ audio { position:absolute; }
 
 /* V */
 	.V_wrap { text-align:center; height:900px; 
-			background:url(../images/bg_img.jpg) center no-repeat; }
+			background:url(../images/bg_img.JPG) center no-repeat; }
 	.V_inner { width:1500px; height:100%; background:#000;
 			margin:0 auto; }
 	/*.V_inner .videoTabs { color:#fff; font-size:24px;
@@ -76,7 +76,7 @@ audio { position:absolute; }
 	#responsiveTabsDemo a:hover {opacity:1;}
 
 /* Dream Launch Plan */
-	.dream_wrap { background:url(../images/bg_img_flip.jpg) center 0 no-repeat;
+	.dream_wrap { background:url(../images/bg_img_flip.JPG) center 0 no-repeat;
 				text-align:center; height:1770px; }
 	.dream_inner .dream_title { color:#fff; font-size:24px; display:inline-block;
 								margin:0 0 60px -1200px; }
