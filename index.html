@@ -46,13 +46,28 @@
 	 			},
  			});
  			//영상 탭
- 			$('#responsiveTabsDemo').responsiveTabs({
-		    startCollapsed: 'accordion'
+ 			/*$('#responsiveTabsDemo').responsiveTabs({
+		    	startCollapsed: 'accordion'
+			});*/
+
+			// 영상 탭
+			tabFn(0);
+			$('.tabWrap .tabMenu li a').on('click', function(){
+				var idx = $('.tabWrap .tabMenu li').index($(this).parent());
+				tabFn(idx);
+				return false;
 			});
-			$('.r-tabs-anchor').on('click', function(){
-				$('.r-tabs-anchor').removeClass('active');
-				$(this).addClass('active');
-			});
+			function tabFn(idx){
+				$('.tabWrap .tabMenu li a').removeClass('active');
+				$('.tabWrap .tabMenu li').eq(idx).find('a').addClass('active');
+				$('.tabWrap .tabContent').hide();;
+				$('.tabWrap .tabContent').eq(idx).show();
+			}
+
+			// $('.r-tabs-anchor').on('click', function(){
+			// 	$('.r-tabs-anchor').removeClass('active');
+			// 	$(this).addClass('active');
+			// });
 			//티저 이미지 애니메이션
 			$('dream_wrap .column').mouseenter(function(){
 				$('.dream_inner .black').animate({
@@ -118,17 +133,17 @@
 
 	<!-- V -->
 	<div class="V_wrap">
-		<div class="V_inner">
-			<div id="responsiveTabsDemo">
+		<div class="V_inner tabWrap">
+			<div id="responsiveTabsDemo" class="tabMenu">
 				<ul>
 					<li><a href="#tab-1" class="btn-1 active">SEE THE V</a></li>
 					<li><a href="#tab-2" class="btn-2">FEEL THE V</a></li>
 				</ul>
 			</div>
-			<div id="tab-1">
+			<div id="tab-1" class="tabContent">
 				<iframe width="1200" height="674" src="https://www.youtube.com/embed/sAiqhaBXQqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-			<div id="tab-2">
+			<div id="tab-2" class="tabContent">
 				<iframe width="1200" height="674" src="https://www.youtube.com/embed/AoLoCtFlK-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>

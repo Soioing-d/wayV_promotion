@@ -61,17 +61,12 @@ audio { position:absolute; }
 			margin:0 auto; }
 	/*.V_inner .videoTabs { color:#fff; font-size:24px;
 						display:inline-block; margin-top:70px; }*/
-	.r-tabs { background:#000; border:none; margin-top:50px; }
-	.r-tabs-anchor {opacity:.5;}
-	.r-tabs-anchor.active {opacity:1;}
-	.r-tabs .r-tabs-panel { background:#000; border:none; }
-	.r-tabs .r-tabs-nav { background:#000; margin-right:1160px; }
-	.r-tabs .r-tabs-nav .r-tabs-tab {background:#000;}
-	.r-tabs .r-tabs-nav .r-tabs-anchor {font-size:24px; font-weight:400;
+	.V_wrap .tabMenu a {opacity:.5; margin-left:15px;}
+	.V_wrap .tabMenu a.active {opacity:1;}
+	.tabWrap .tabMenu ul { margin:50px 0; margin-left:-1180px; }
+	.tabWrap .tabMenu li { display:inline-block; }
+	.tabWrap .tabMenu {font-size:24px; font-weight:400;
 										color:#fff;}
-	.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor 
-			{ color:#fff; background:#000;}
-	.r-tabs .r-tabs-panel.r-tabs-state-active {margin-top:40px;}
 
 	#responsiveTabsDemo a:hover {opacity:1;}
 
