@@ -26,6 +26,12 @@
 					'scrollTop':pos
 				}, 800);
 			});
+			$('.nav_menu .m3').on('click', function(){
+				var pos=$('.regular_wrap').offset().top-80;
+				$('html,body').animate({
+					'scrollTop':pos
+				}, 800);
+			});
 			//이미지 슬라이드 배너
 			var swiper = new Swiper('.swiper-container', {
 				slidesPerView:1,
@@ -205,7 +211,14 @@
 	<!-- Regular -->
 	<div class="regular_wrap">
 		<div class="regular_inner">
-			<p>Regular</p>
+			<div class="regular_title">Regular</div>
+			<img src="images/regular01.jpg" class="rgl_img01">
+			<img src="images/regular02.jpg" class="rgl_img02">
+			<img src="images/regular03.jpg" class="rgl_img03">
+			<img src="images/regular04.jpg" class="rgl_img04">
+			<img src="images/regular05.jpg" class="rgl_img05">
+			<img src="images/regular06.jpg" class="rgl_img06">
+			<img src="images/regular07.jpg" class="rgl_img07">
 		</div>
 	</div>
 
